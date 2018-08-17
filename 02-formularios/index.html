@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Document</title>
@@ -7,13 +8,88 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <form action="" method="get">
-        <label for="email">Email:</label>
-        <input id="email" type="text">
+        <fieldset>
+            <legend>Conta: </legend>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="text">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" />
+            </div>
+        </fieldset>
 
-        <label for="senha">Senha:</label>
-        <input id="senha" type="password">
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" placeholder="Ex: Bruno" />
+            </div>
+            <div>
+                <label for="nome">Telefone:</label>
+                <input type="text" placeholder="(91) 98520-5631" />
+            </div>
+            <div>
+                <label for="nome">Sexo:</label>
+                <input type="radio" value="masculino" name="sexo" checked/>
+                <label for="nome">Masculino</label>
+                <input type="radio" value="feminino" name="sexo" />
+                <label for="nome">Feminino</label>
+            </div>
+            <div>
+                <label for="data">Data de nascimento:</label>
+                <input id="data" type="date" accept="image/*" />
+            </div>
+            <div>
+                <label for="">Foto de perfil</label>
+                <input type="file">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label for="rua">Rua:</label>
+                <input id="rua" type="text" />
+            </div>
+            <div>
+                <label for="complemento">Complemento:</label>
+                <input id="complemento" type="text" />
+            </div>
+            <div>
+                <label for="numero">Número:</label>
+                <input id="numero" type="number" min="0" max="9999" />
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" type="text" />
+            </div>
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="" id="estado">
+                    <option value="PA">Pará</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Anuncio</legend>
+            <div>
+                <label for="">Como conheceu a Hello Pizza</label>
+                <textarea maxlength="256" name="" id="" cols="30" rows="10" placeholder="Explique para gente como conheceu nossa loja fisica"></textarea>
+            </div>
+            
+            <div>
+                <input type="checkbox" checked/>
+                <label for="">Desejo receber ofertas por e-mail</label>
+            </div>
+        </fieldset>
+        
     </form>
 </body>
+
 </html>

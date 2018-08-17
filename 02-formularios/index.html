@@ -15,11 +15,11 @@
             <legend>Conta: </legend>
             <div>
                 <label for="email">Email:</label>
-                <input id="email" type="text" name="email">
+                <input id="email" type="email" name="email" required minlength="5" maxlength="256">
             </div>
             <div>
                 <label for="senha">Senha:</label>
-                <input id="senha" type="password" name="senha"/>
+                <input id="senha" type="password" name="senha" required/>
             </div>
         </fieldset>
 
@@ -31,7 +31,7 @@
             </div>
             <div>
                 <label for="nome">Telefone:</label>
-                <input type="text" placeholder="(91) 98520-5631" name="telefone"/>
+                <input type="text" placeholder="(91) 98520-5631" name="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/>
             </div>
             <div>
                 <label for="nome">Sexo:</label>
